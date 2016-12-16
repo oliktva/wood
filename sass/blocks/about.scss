@@ -1,0 +1,44 @@
+.about {
+  height: 80%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.about > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.about__img-wrapper {
+  position: relative;
+  height: 17em;
+  overflow: hidden;
+}
+
+.about__descr {
+  padding: 5%;
+}
+
+.about__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.about__title {
+  font-size: 1.5em;
+}
+
+.about__text-wrapper {
+  padding: 2em 0;
+}
+
+.about__text:not(:last-child) {
+  padding-bottom: 1em;
+}

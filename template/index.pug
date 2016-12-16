@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    title One page site
+    link(rel="stylesheet" href="css/style.min.css")
+  body
+    div.container
+      include includes/header.pug
+      main
+        div.flex-column.container__item.container__item--main
+          div.logo.flex-column__element
+            include includes/logo.pug
+          div.flex-column__element.scroll
+            span.scroll__text Scroll down to see more
+            a.scroll__link(href="#about")
+              include includes/scroll.pug
+        div.flex-column.container__item.container__item--white#about
+          div.about.flex-column__element.clearfix
+            div.about__img-wrapper
+              img.about__img(src="img/About.jpg" alt="Jason Wood")
+            div.about__descr
+              h2.about__title About Me
+              div.about__text-wrapper
+                p.about__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                p.about__text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              img(src="img/Signature.png" alt="Jason Wood")
+          div.flex-column__element.scroll
+            span.scroll__text Keep scrolling, there is still more to come.
+            a.scroll__link(href="#")
+              include includes/scroll.pug
+    script(src="js/svg4everybody.js")
+    script svg4everybody();
+    script(src="js/picturefill.js")
+    script(src="js/script.js")

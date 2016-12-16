@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Nexa-Light"; /* Имя шрифта */
+  src: url(../font/Nexa-Light.otf),
+  url(../font/Nexa-Light.woff); /* Путь к файлу со шрифтом */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa-Bold"; /* Имя шрифта */
+  src: url(../font/Nexa-Bold.otf),
+  url(../font/Nexa-Bold.woff); /* Путь к файлу со шрифтом */
+  font-weight: bold;
+  font-style: normal;
+}
