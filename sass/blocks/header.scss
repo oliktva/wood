@@ -1,8 +1,9 @@
 .header {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   width: 90%;
   max-width: $desktop-width;
-  margin: 0 auto;
   padding: 0 67px;
   background-color: transparent;
   z-index: 500;
@@ -12,7 +13,7 @@
 .header__wrapper {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $color-white;
+  border-bottom: 1px solid $color-white-2;
 }
 
 .header__item {
@@ -32,7 +33,7 @@
   transition: .3s;
 }
 
-.header--gray {
+.header--gray .header__wrapper {
   color: $color-white;
   background-color: transparent;
   border-bottom: 1px solid $color-gray;
@@ -40,4 +41,8 @@
 
 .header--gray .header__link {
   color: $color-gray;
+}
+
+.header--gray .header__link:hover {
+  color: $color-gray-2;
 }

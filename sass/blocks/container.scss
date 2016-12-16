@@ -7,7 +7,7 @@
 
 .container__item {
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 83px;
 }
 
 .container__item--main {
@@ -17,4 +17,9 @@
 
 .container__item--white {
   background-color: $color-white;
+}
+
+.container__item--portfolio {
+    background: url("../img/Background-2.jpg") 0 0 no-repeat;
+    background-size: cover;
 }
