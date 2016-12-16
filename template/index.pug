@@ -8,13 +8,13 @@ html(lang="ru")
   body
     div.container
       include includes/header.pug
-      main
+      main#home
         div.flex-column.container__item.container__item--main
           div.logo.flex-column__element
             include includes/logo.pug
           div.flex-column__element.scroll
             span.scroll__text Scroll down to see more
-            a.scroll__link(href="#about")
+            a.scroll__link.scrollto(href="#about")
               include includes/scroll.pug
         div.flex-column.container__item.container__item--white#about
           div.about.flex-column__element.clearfix
@@ -28,7 +28,7 @@ html(lang="ru")
               img(src="img/Signature.png" alt="Jason Wood")
           div.flex-column__element.scroll
             span.scroll__text Keep scrolling, there is still more to come.
-            a.scroll__link(href="#portfolio")
+            a.scroll__link.scrollto(href="#portfolio")
               include includes/scroll.pug
         div.portfolio.flex-column.container__item.container__item--portfolio#portfolio
           div.flex-column__element
@@ -57,9 +57,9 @@ html(lang="ru")
                 img.portfolio__img(src="img/10.jpg" alt="")
           div.flex-column__element.scroll
             span.scroll__text Do you want to see it with your own eyes? Scroll!
-            a.scroll__link(href="#mail")
+            a.scroll__link.scrollto(href="#contact")
               include includes/scroll.pug
-        footer.footer.flex-column.flex-column--center.container__item.container__item--white#mail
+        footer.footer.flex-column.flex-column--center.container__item.container__item--white#contact
           div.footer__row.flex-column.flex-column__element
             label.footer__label.flex-column__element(for="email") Mail:
             a.footer__info.flex-column__element#email(href="mailto:Jason@wood.com") Jason@wood.com
