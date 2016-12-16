@@ -11,6 +11,10 @@
   height: 21px;
 }
 
+.scroll__link:hover {
+  transform: scale(1.2);
+}
+
 .scroll__text {
   display: block;
   padding-bottom: 1em;

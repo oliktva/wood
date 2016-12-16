@@ -1,0 +1,36 @@
+.footer__info {
+  @include title();
+}
+
+a.footer__info {
+  font-size: 2.2em;
+}
+
+a.footer__info:hover {
+  color: $color-gray;
+}
+
+.footer__label {
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: $font-2;
+  font-size: 1.3em;
+}
+
+.footer__social-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 13px;
+}
+
+.footer__social-item:hover {
+  transform: scale(1.1);
+}
+
+.footer__social-item:active path.footer__social-color{
+  fill: $color-gray;
+}
+
+.footer__row {
+  padding-bottom: 10px;
+}
