@@ -539,6 +539,7 @@ p {
   fill: #bebebe; }
 
 .about {
+  width: 100%;
   height: 80%;
   padding-right: 10%;
   padding-left: 10%; }
