@@ -17,6 +17,7 @@ var run = require("run-sequence");
 var del = require("del");
 var cheerio = require("gulp-cheerio");
 var replace = require("gulp-replace");
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -110,4 +111,9 @@ gulp.task("build", function(fn) {
    "symbols",
     fn
   );
-})
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
