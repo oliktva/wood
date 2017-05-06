@@ -10,7 +10,7 @@
   },
   "homepage": "url",
   "devDependencies": {
-    "autoprefixer": "6.5.4",
+    "autoprefixer": "6.6.1",
     "browser-sync": "2.18.5",
     "css-mqpacker": "^5.0.1",
     "del": "^2.2.1",
@@ -36,5 +36,14 @@
   },
   "engines": {
     "node": "5.11"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie > 10",
+    "iOS > 5",
+    "Firefox > 44",
+    "Chrome > 26",
+    "Opera > 24",
+    "Safari > 6"
+  ]
 }
